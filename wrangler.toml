@@ -1,0 +1,20 @@
+name = "cf-mail"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cf_mail_db"
+database_id = "f4a53793-8ce8-4f88-9b29-811dad6330f9"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "cf-mail-storage"
+
+[vars]
+ADMIN_PASSWORD = "Changeyourpasswordbeforeusingcfmail"
+JWT_SECRET = "changeyourjwttokenbeforeusingcfmail"
+MAIL_DOMAIN = "ucbrowser.com,example2.com"
+
+[assets]
+directory = "public"
